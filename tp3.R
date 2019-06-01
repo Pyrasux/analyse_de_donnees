@@ -38,7 +38,7 @@ id <- diag(300)
 C<-dist(mat, method = "euclidean", diag = FALSE, upper = FALSE)
 tab_dist<-as.matrix(C)
 
-# On arrête la classification lorsqu'on a 3 classes
+# On arrete la classification lorsqu'on a 3 classes
 while(nrow(tab_dist)>3){
   # On trouve les points qui ont la distance min1male
   min_dist<-which(tab_dist==min(C),arr.ind = T)
